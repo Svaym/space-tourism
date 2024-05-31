@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+  body {
+    @apply font-normal font-barlow h-screen text-lightGray overflow-x-hidden bg-desktop bg-cover bg-no-repeat lg:bg-tablet lg:bg-bottom xs:bg-mobile xs:bg-center
+  }
+}
+.container {
+  @apply max-w-7xl mx-auto px-5 w-full md:px-3 xxs:px-2
+}
