@@ -6,7 +6,7 @@ export default function Destination() {
   return (
     <section className="">
       <div className="container">
-        <div className="pl-16 mt-8 md:pl-0">
+        <div className="pl-16 mt-8 md:pl-0 md:mt-6 xs:mt-2">
           <h2 className="text-2xl tracking-wide uppercase md:text-center">
             <span className="text-gray-400">01</span> Pick your destination
           </h2>
@@ -28,7 +28,7 @@ export default function Destination() {
                     <button onClick={() => setPlanets(2)} className={`relative uppercase transition-all duration-300 ease-in-out after:h-[2px] after:w-0 after:bg-white after:block after:left-0 after:absolute after:content-[''] active:text-neutral-95 ${planets===2 ? 'text-neutral-300 after:w-full after:-bottom-1' : 'hover:after:-bottom-1 hover:after:animate-fade hover:after:w-full hover:text-neutral-300'}`}>europa</button>
                     <button onClick={() => setPlanets(3)} className={`relative uppercase transition-all duration-300 ease-in-out after:h-[2px] after:w-0 after:bg-white after:block after:left-0 after:absolute after:content-[''] active:text-neutral-95 ${planets===3 ? 'text-neutral-300 after:w-full after:-bottom-1' : 'hover:after:-bottom-1 hover:after:animate-fade hover:after:w-full hover:text-neutral-300'}`}>titan</button>
                   </div>
-                  <h2 className={planets === id ? "font-bold text-8xl mt-5 md:text-center" : 'hidden'}>
+                  <h2 className={planets === id ? "font-bold text-8xl mt-5 md:text-center md:text-6xl sm:mt-3" : 'hidden'}>
                     {item.name}
                   </h2>
                   <p className={planets === id ? 'text-gray-300 mt-4 w-5/8 font-medium lg:w-full md:w-full md:mx-auto md:text-center md:font-semibold' : 'hidden'}>

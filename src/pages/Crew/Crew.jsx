@@ -20,13 +20,13 @@ export default function Crew() {
                   <h2 className="uppercase text-5xl font-medium mt-2 lg:text-3xl">
                     {item.name}
                   </h2>
-                  <blockquote className="w-3/5 mt-5 xl:w-[85%] lg:text-[15px] lg:mt-3 md:mx-auto sm:mt-0">{item.quote}</blockquote>
+                  <blockquote className="w-3/5 mt-5 xl:w-[85%] lg:text-[15px] lg:mt-3 md:mx-auto sm:w-full sm:mt-0">{item.quote}</blockquote>
                 </div>
-                <img src={item.img} className="h-[38rem] lg:h-[26rem] md:mx-auto xs:h-[24rem]" alt="author" />
+                <img src={item.img} className="h-[38rem] lg:h-[26rem] md:mx-auto xs:h-[21rem]" alt="author" />
               </div>
             </>
           ))}
-          <div className="flex items-center gap-x-5 relative -mt-36 lg:-mt-12 md:static md:justify-center md:-mt-[39rem] sm:-mt-[40.5rem] xs:-mt-[40.5rem]">
+          <div className="flex items-center gap-x-5 relative -mt-36 lg:-mt-12 md:static md:justify-center md:-mt-[39rem] sm:-mt-[40.5rem] xs:-mt-[36.8rem]">
             <button onClick={() => setCrew(0)} className={`p-2 rounded-full ${crew===0 ? 'bg-gray-300 lg:bg-gray-900' : 'bg-gray-600 transition-colors duration-300 ease-linear hover:bg-gray-400 lg:bg-gray-700'}`}></button>
             <button onClick={() => setCrew(1)} className={`p-2 rounded-full ${crew===1 ? 'bg-gray-300 lg:bg-gray-900' : 'bg-gray-600 transition-colors duration-300 ease-linear hover:bg-gray-400 lg:bg-gray-700'}`}></button>
             <button onClick={() => setCrew(2)} className={`p-2 rounded-full ${crew===2 ? 'bg-gray-300 lg:bg-gray-900' : 'bg-gray-600 transition-colors duration-300 ease-linear hover:bg-gray-400 lg:bg-gray-700'}`}></button>
